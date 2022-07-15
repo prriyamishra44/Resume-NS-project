@@ -19,22 +19,28 @@
   
   
 .left-section{
+display: grid;
 width: 300px;
 height: 1000px; 
 display: grid;
 background-color: aqua;
+grid-column: 1 /  span 2;
 }
-.div.left .content{
- padding: 300px;
-}
+
+
  h2.name {
 color: white; 
- padding:1rem;;
+font-size: 1.2rem;
+font-weight : 700px;
+text-align: center;
+letter-spacing: 0.02px;
+text-transform: uppercase;
+padding : 0.8rem;
 } 
  
 
 
-.right-section{
+section.right-section{
     width: 700px;
      height: 1000px; 
     background-color:bisque;
@@ -49,22 +55,13 @@ color: white;
     border-radius:30%;
 }
 
-.name{
-    font-size: 1.2 rem;
-    font-weight : 700px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    text-transform: uppercase;
-    padding : 0.8 rem;
-    filter:contrast(13.91);
-}
-.designation{
+h4.designation{
     font-size: 1rem;
     padding-bottom : 0.5rem;
     text-align: center;
     text-transform: uppercase;
 }
-.description{
+p.description{
     border: #f5f5f5;
     font-size : 0.75rem;
     text-align: center;
@@ -84,21 +81,24 @@ div.skills{
     border-radius: 268*408px; 
      border-color: darkolivegreen;
 }
-.skill-title{
-    font-size : 0.75 rem;
+.skills{
+    font-size : 0.75rem;
     text-align: center;
     text-transform: uppercase;
-    padding : 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
+
 .skill-name{
     font-size: 0.65rem;
-    font-weight: 0.6rem;
+    font-weight: 0.65rem;
     text-align: left;
-    padding-bottom : 0.5 rem;
+    padding-bottom : 0.5rem;
 }
 .progress-bar{
-    border: 1px;
-    border-color: white solid;
+    border: 1px solid white;
     height: 4px;
 }
 .right-section{
@@ -115,14 +115,19 @@ div.skills{
     letter-spacing: 1px;
 }
 
- @media screen and (max-width:630px){
+ @media screen and (max-width:674px){
 .main-content{
+    width: 90%;
+    min-height: 1000px;
+    display: grid;
     grid-template-column: repeat(1, 1fr);
-    
-}
+} 
+}  
+
 @media screen and (max-width:673px){
-}
 .main-content{
+    min-height: 1000px;
+    width:90%
     grid-template-column: repeat(1, 1fr);
     
 }
